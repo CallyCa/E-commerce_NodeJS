@@ -4,6 +4,8 @@ const tourController = require("./../controllers/tourController");
 
 // Router tour
 
+router.param("id", tourController.checkID);
+
 router
     .route("/")
     .get(tourController.getAllTours)
