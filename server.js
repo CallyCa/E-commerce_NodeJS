@@ -1,5 +1,5 @@
-const mongoose = require("mongoose");
 const dotenv = require('dotenv');
+const mongoose = require("mongoose");
 
 const app = require("./app");
 const port = process.env.PORT || 3000;
@@ -16,6 +16,7 @@ mongoose
     useFindAndModify: false
 })
     .then(() => console.log('DB connection successful'));
+
 
 //console.log(process.env)
 
